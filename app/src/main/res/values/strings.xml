@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">LeanIX</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title">Mission Name</string>
+    <string name="secondary_text">launch Date</string>
+    <string name="site_name">Site Name</string>
+    <string name="rocketName">Rocket Name: </string>
+    <string name="wasLaunchSuccess">Was Launch Success: </string>
+    <string name="no_bookmark_found">You haven\'t Bookmarked anything, Bookmark and read offline</string>
+</resources>

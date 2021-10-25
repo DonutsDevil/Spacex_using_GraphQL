@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/launchesListFragment">
+
+    <fragment
+        android:id="@+id/launchesListFragment"
+        android:name="com.example.leanix.Views.LaunchesListFragment"
+        android:label="fragment_launches_list"
+        tools:layout="@layout/fragment_launches_list" >
+        <action
+            android:id="@+id/action_launchesListFragment_to_launchDetailsFragment"
+            app:destination="@id/launchDetailsFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_launchesListFragment_to_bookmarkFragment"
+            app:destination="@id/bookmarkFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+    </fragment>
+    <fragment
+        android:id="@+id/launchDetailsFragment"
+        android:name="com.example.leanix.Views.LaunchDetailsFragment"
+        android:label="fragment_launch_details"
+        tools:layout="@layout/fragment_launch_details" />
+    <fragment
+        android:id="@+id/bookmarkFragment"
+        android:name="com.example.leanix.Views.BookmarkFragment"
+        android:label="fragment_bookmark"
+        tools:layout="@layout/fragment_bookmark" >
+        <action
+            android:id="@+id/action_bookmarkFragment_to_launchDetailsFragment"
+            app:destination="@id/launchDetailsFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+    </fragment>
+</navigation>

@@ -1,0 +1,24 @@
+query LaunchDetails {
+    launchesPast(limit: 10) {
+        mission_name
+        launch_date_local
+        launch_site {
+            site_name_long
+            site_name
+        }
+        links {
+            article_link
+            video_link
+            mission_patch
+            mission_patch_small
+            flickr_images
+        }
+        rocket {
+            rocket_name
+        }
+        launch_success
+        launch_date_unix
+        details
+        id
+    }
+}

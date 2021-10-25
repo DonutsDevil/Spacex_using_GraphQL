@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Views.BookmarkFragment">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/bookmarkRv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:listitem="@layout/cell_launch_list_item"
+        />
+
+    <TextView
+        android:id="@+id/noBookmarksTv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:gravity="center"
+        android:text="@string/no_bookmark_found"
+        android:textAppearance="?attr/textAppearanceHeadline5"/>
+
+
+</FrameLayout>

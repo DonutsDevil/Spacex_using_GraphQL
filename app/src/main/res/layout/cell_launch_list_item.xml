@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/launchCard"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <!-- Media -->
+            <ImageView
+                android:id="@+id/launchPatchImage"
+                android:layout_width="match_parent"
+                android:layout_height="194dp"
+                app:srcCompat="@drawable/ic_launcher_background" />
+
+            <ImageView
+                android:id="@+id/bookMarkIv"
+                android:layout_width="30dp"
+                android:layout_height="55dp"
+                android:scaleType="centerCrop"
+                android:layout_marginEnd="8dp"
+                android:background="@android:color/transparent"
+                android:src="@drawable/ic_bookmark_unfilled"
+                android:layout_gravity="end"/>
+        </FrameLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <!-- Title and secondary text -->
+                <TextView
+                    android:id="@+id/missionNameTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:text="@string/title"
+                    android:textAppearance="?attr/textAppearanceHeadline6"/>
+
+                <TextView
+                    android:id="@+id/launchDateTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    tools:text="@string/secondary_text"
+                    android:textAppearance="?attr/textAppearanceBody2"
+                    android:textColor="?android:attr/textColorSecondary"/>
+
+            </LinearLayout>
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>
