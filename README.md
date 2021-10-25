@@ -19,13 +19,18 @@ Open android studio -> import from vcs -> run.
   </tr>
   
   <tr>
-    <td> <img src="Gifs/book_to_details.gif" width="200"> &emsp; <img src="Gifs/list_to_detail.gif" width="200"> </td>
-    <td> <h2> Go to Details</h2> <br /> carousel list view is created without using external Libary, While displaying Details of the launch from ListFragment and BookmarkFragment</td>
+    <td> <img src="Gifs/book_to_details.gif" width="200">  &emsp;  <img src="Gifs/list_to_detail.gif" width="200"> </td>
+    <td> <h2> Go to Details</h2> <br /> carousel list view is created without using external Libary, While displaying Details of the launch from ListFragment and BookmarkFragment respectively</td>
   </tr>
    
    <tr>
     <td> <h2> Sort List</h2> <br/>We can sort the launch on base of launch date or mission name while keeping bookmarks and List view type in place</td>
     <td> <img src="Gifs/sort.gif" width="200"> </td>
+  </tr>
+  
+  <tr>
+    <td> <img src="Gifs/noInternetBookmrk.gif" width="200"> </td>
+    <td> <h2> No Internet</h2> <br /> We can view bookmarks even without internet</td>
   </tr>
   
 </table>
